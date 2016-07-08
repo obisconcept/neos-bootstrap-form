@@ -23,6 +23,7 @@ TYPO3:
               formNextButtonClassAttribute: 'btn btn-primary'
               formSubmitButtonClassAttribute: 'btn btn-primary'
               containerClassAttribute: 'pull-left'
+              actionClassAttribute: 'col-sm-10 col-sm-offset-2'
           'TYPO3.Form:Page':
             renderingOptions:
               pageClassAttribute: ''
@@ -42,9 +43,9 @@ TYPO3:
           'TYPO3.Form:SingleSelectRadiobuttons':
             properties:
               elementListClassAttrbiute: 'list-unstyled'
-          'ObisConcept.BootstrapForm:GoogleCaptcha':
+          'ObisConcept.NeosBootstrapForm:GoogleCaptcha':
             superTypes: ['TYPO3.Form:FormElement']
-            implementationClassName: 'ObisConcept\BootstrapForm\FormElements\GoogleCaptcha'
+            implementationClassName: 'ObisConcept\NeosBootstrapForm\FormElements\GoogleCaptcha'
             properties:
               sitekey: ''
 

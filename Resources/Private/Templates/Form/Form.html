@@ -3,7 +3,7 @@
 <form:form action="index" object="{form}" method="post" class="{form.renderingOptions.formClassAttribute}" id="{form.identifier}" enctype="multipart/form-data">
 	<div class="row">
 		<form:renderRenderable renderable="{form.currentPage}" />
-		<div class="col-xs-12">
+		<div class="{form.renderingOptions.actionClassAttribute}">
 			<div class="actions">
 				<f:render partial="TYPO3.Form:Form/Navigation" arguments="{form: form}" />
 			</div>
