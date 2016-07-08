@@ -1,0 +1,5 @@
+prototype(TYPO3.Neos.NodeTypes:Form) {
+
+    presetName = 'bootstrap'
+
+}

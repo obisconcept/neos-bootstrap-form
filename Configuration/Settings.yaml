@@ -1,0 +1,55 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'ObisConcept.NeosBootstrapForm': TRUE
+
+  Form:
+    presets:
+      bootstrap:
+        title: 'Twitter Bootstrap'
+        parentPreset: 'default'
+        formElementTypes:
+          'TYPO3.Form:Base':
+            renderingOptions:
+              templatePathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/{@type}.html'
+              partialPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Partials/{@type}.html'
+              layoutPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Layouts/{@type}.html'
+              translationPackage: 'ObisConcept.NeosBootstrapForm'
+          'TYPO3.Form:Form':
+            renderingOptions:
+              formClassAttribute: 'form-horizontal'
+              formPrevButtonClassAttribute: 'btn btn-cancel'
+              formNextButtonClassAttribute: 'btn btn-primary'
+              formSubmitButtonClassAttribute: 'btn btn-primary'
+              containerClassAttribute: 'pull-left'
+          'TYPO3.Form:Page':
+            renderingOptions:
+              pageClassAttribute: ''
+          'TYPO3.Form:Section':
+            properties:
+              sectionClassAttribute: 'col-xs-12'
+          'TYPO3.Form:FormElement':
+            properties:
+              labelClassAttribute: 'col-sm-2 control-label'
+              containerClassAttribute: 'form-group'
+              containerInnerClassAttribute: 'col-sm-10'
+              elementClassAttribute: 'form-control'
+              elementErrorClassAttribute: 'has-error'
+          'TYPO3.Form:MultiLineText':
+            properties:
+              elementClassAttribute: 'form-control'
+          'TYPO3.Form:SingleSelectRadiobuttons':
+            properties:
+              elementListClassAttrbiute: 'list-unstyled'
+          'ObisConcept.BootstrapForm:GoogleCaptcha':
+            superTypes: ['TYPO3.Form:FormElement']
+            implementationClassName: 'ObisConcept\BootstrapForm\FormElements\GoogleCaptcha'
+            properties:
+              sitekey: ''
+
+ObisConcept:
+  BootstrapForm:
+    googleCaptcha:
+      contact-form:
+        secretkey: ''

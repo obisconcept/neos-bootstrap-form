@@ -1,0 +1,14 @@
+prototype(TYPO3.Neos:Page) {
+
+    head {
+
+        googleCaptcha = TYPO3.TypoScript:Tag {
+            tagName = 'script'
+            attributes {
+                src = 'https://www.google.com/recaptcha/api.js'
+            }
+        }
+
+    }
+
+}
