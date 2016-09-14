@@ -5,7 +5,15 @@
 		<div class="{element.properties.containerInnerClassAttribute}">
 			<div class="checkbox">
 				<label for="{element.uniqueIdentifier}">
-					<f:form.checkbox property="{element.identifier}" id="{element.uniqueIdentifier}" value="{element.properties.value}" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{required: element.required}" /> {element.label -> f:format.nl2br()}
+					<f:if condition="{element.required}">
+						<f:then>
+							<f:form.checkbox property="{element.identifier}" id="{element.uniqueIdentifier}" value="{element.properties.value}" errorClass="{element.properties.elementErrorClassAttribute}" additionalAttributes="{required: element.required}" />
+						</f:then>
+						<f:else>
+							<f:form.checkbox property="{element.identifier}" id="{element.uniqueIdentifier}" value="{element.properties.value}" errorClass="{element.properties.elementErrorClassAttribute}" />
+						</f:else>
+					</f:if>
+					{element.label -> f:format.nl2br()}
 				</label>
 			</div>
 		</div>

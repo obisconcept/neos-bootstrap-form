@@ -4,6 +4,8 @@ A Neos CMS package for forms in Twitter Bootstrap style and some additional feat
 ## Installation
 Add the package in your site package composer.json
 
-`"require": {
-     "obisconcept/neos-bootstrap-form": "~1.0.0"
- }`
+```
+"require": {
+     "obisconcept/neos-bootstrap-form": "~1.0"
+ }
+ ```
