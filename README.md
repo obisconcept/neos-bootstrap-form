@@ -6,6 +6,6 @@ Add the package in your site package composer.json
 
 ```
 "require": {
-     "obisconcept/neos-bootstrap-form": "~1.0"
+     "obisconcept/neos-bootstrap-form": "~1.0.0"
  }
  ```
