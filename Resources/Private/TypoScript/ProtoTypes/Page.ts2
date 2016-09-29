@@ -6,6 +6,10 @@ prototype(TYPO3.Neos:Page) {
             tagName = 'script'
             attributes {
                 src = 'https://www.google.com/recaptcha/api.js'
+                src.@process.setLang {
+                    expression = ${value + '?hl=' + documentNode.context.dimensions.language[0]}
+                    @if.languageDimensionExists = ${Configuration.setting('TYPO3.TYPO3CR.contentDimensions.language')
+                }
             }
         }
 

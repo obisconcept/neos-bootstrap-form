@@ -4,14 +4,28 @@
 			<f:then>
 				<li class="next" style="float: right;">
 					<f:form.button name="__currentPage" value="{form.nextPage.index}" class="{form.renderingOptions.formNextButtonClassAttribute}">
-						{f:if(condition:form.renderingOptions.nextButtonLabel, then:form.renderingOptions.nextButtonLabel, else: 'Next')}
+						<f:if condition="{form.renderingOptions.nextButtonLabel}">
+							<f:then>
+								{f:translate(id: 'form.nextButton', source: '{form.renderingOptions.translationSource}', package: '{form.renderingOptions.translationPackage}', value: '{form.renderingOptions.nextButtonLabel}')}
+							</f:then>
+							<f:else>
+								Next
+							</f:else>
+						</f:if>
 					</f:form.button>
 				</li>
 			</f:then>
 			<f:else>
 				<li class="next submit" style="float: right;">
 					<f:form.button name="__currentPage" value="{form.pages -> f:count()}" class="{form.renderingOptions.formSubmitButtonClassAttribute}">
-						{f:if(condition:form.renderingOptions.submitButtonLabel, then:form.renderingOptions.submitButtonLabel, else: 'Submit')}
+						<f:if condition="{form.renderingOptions.submitButtonLabel}">
+							<f:then>
+								{f:translate(id: 'form.submitButton', source: '{form.renderingOptions.translationSource}', package: '{form.renderingOptions.translationPackage}', value: '{form.renderingOptions.submitButtonLabel}')}
+							</f:then>
+							<f:else>
+								Submit
+							</f:else>
+						</f:if>
 					</f:form.button>
 				</li>
 			</f:else>
@@ -19,7 +33,14 @@
 		<f:if condition="{form.previousPage}">
 			<li class="previous">
 				<f:form.button name="__currentPage" value="{form.previousPage.index}" formnovalidate="formnovalidate" class="{form.renderingOptions.formPrevButtonClassAttribute}">
-					{f:if(condition:form.renderingOptions.prevButtonLabel, then:form.renderingOptions.prevButtonLabel, else: 'Previous')}
+					<f:if condition="{form.renderingOptions.prevButtonLabel}">
+						<f:then>
+							{f:translate(id: 'form.prevButton', source: '{form.renderingOptions.translationSource}', package: '{form.renderingOptions.translationPackage}', value: '{form.renderingOptions.prevButtonLabel}')}
+						</f:then>
+						<f:else>
+							Previous
+						</f:else>
+					</f:if>
 				</f:form.button>
 			</li>
 		</f:if>
