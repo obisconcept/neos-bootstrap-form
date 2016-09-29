@@ -2,7 +2,7 @@
 
 <fieldset id="{section.uniqueIdentifier}"{f:if(condition: section.properties.sectionClassAttribute, then: ' class="{section.properties.sectionClassAttribute}"')}>
 	<f:if condition="{section.label}">
-		<legend>{section.label}</legend>
+		<legend>{f:translate(id: 'form.section.{section.identifier}', source: '{section.renderingOptions.translationSource}', package: '{section.renderingOptions.translationPackage}', value: '{section.label}')}</legend>
 	</f:if>
 	<f:for each="{section.elements}" as="element">
 		<form:renderRenderable renderable="{element}" />
