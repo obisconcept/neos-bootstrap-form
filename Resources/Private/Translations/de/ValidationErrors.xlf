@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file original="" product-name="ObisConcept.BootstrapForm" source-language="en" datatype="plaintext" target-language="de">
+	<file original="" product-name="ObisConcept.NeosBootstrapForm" source-language="en" datatype="plaintext" target-language="de">
 		<body>
 			<trans-unit id="8732423746" xml:space="preserve">
 				<source>Captcha math task isn't correct</source>
