@@ -13,7 +13,7 @@
 							<f:form.checkbox property="{element.identifier}" id="{element.uniqueIdentifier}" value="{element.properties.value}" errorClass="{element.properties.elementErrorClassAttribute}" />
 						</f:else>
 					</f:if>
-					{element.label -> f:format.nl2br()}
+					{f:translate(id: 'form.label.{element.identifier}', source: '{element.renderingOptions.translationSource}', package: '{element.renderingOptions.translationPackage}', value: '{element.label -> f:format.nl2br()}')}
 				</label>
 			</div>
 		</div>
