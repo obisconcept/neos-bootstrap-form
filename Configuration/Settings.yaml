@@ -1,14 +1,8 @@
-
-ObisConcept:
-  NeosBootstrapForm:
-    googleCaptcha:
-      contact-form:
-        secretkey: ''
 Neos:
   Form:
     presets:
       bootstrap:
-        title: 'Twitter Bootstrap'
+        title: 'Bootstrap'
         parentPreset: default
         formElementTypes:
           'Neos.Form:Base':

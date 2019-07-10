@@ -1,11 +1,9 @@
 # neos-bootstrap-form
-A Neos CMS package for forms in Twitter Bootstrap style and some additional features like Google Recaptcha
+
+A Neos CMS package for forms in Bootstrap style.
 
 ## Installation
-Add the package in your site package composer.json
 
+``` bash
+composer require obisconcept/neos-bootstrap-form:dev-minimal
 ```
-"require": {
-     "obisconcept/neos-bootstrap-form": "~2.0.0"
- }
- ```

@@ -1,5 +1,0 @@
-prototype(Neos.NodeTypes:Form) {
-
-    presetName = 'bootstrap'
-
-}
