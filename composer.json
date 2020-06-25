@@ -12,8 +12,8 @@
     "description": "A Neos CMS package for forms in Bootstrap style.",
     "license": "MIT",
     "require": {
-        "neos/neos": "^3.0.0",
-        "neos/nodetypes": "^3.0.0"
+        "neos/neos": "^4.0.0",
+        "neos/nodetypes": "^4.0.0"
     },
     "suggest": {
         "obisconcept/neos-bootstrap": "Add this if you don't include Bootstrap by yourself."
