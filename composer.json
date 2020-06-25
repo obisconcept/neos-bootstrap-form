@@ -1,11 +1,13 @@
 {
     "name": "obisconcept/neos-bootstrap-form",
     "type": "neos-plugin",
-    "authors": [{
-        "name": "obis|CONCEPT GmbH & Co. KG",
-        "email": "dev@obis-concept.de",
-        "homepage": "https://www.obis-concept.de"
-    }],
+    "authors": [
+        {
+            "name": "obis|CONCEPT GmbH & Co. KG",
+            "email": "dev@obis-concept.de",
+            "homepage": "https://www.obis-concept.de"
+        }
+    ],
     "support": {
         "email": "dev@obis-concept.de"
     },
@@ -21,6 +23,9 @@
     "extra": {
         "neos": {
             "package-key": "ObisConcept.NeosBootstrapForm"
-        }
+        },
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }
