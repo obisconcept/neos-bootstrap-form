@@ -1,8 +1,9 @@
+
 Neos:
   Form:
     presets:
       bootstrap:
-        title: 'Bootstrap'
+        title: Bootstrap
         parentPreset: default
         formElementTypes:
           'Neos.Form:Base':
@@ -10,8 +11,8 @@ Neos:
               templatePathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/{@type}.html'
               partialPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Partials/{@type}.html'
               layoutPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Layouts/{@type}.html'
-              translationPackage: ObisConcept.NeosBootstrapForm
               translationSource: Form
+              validationErrorTranslationPackage: ObisConcept.NeosBootstrapForm
           'Neos.Form:Form':
             renderingOptions:
               formClassAttribute: form-horizontal
