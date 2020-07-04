@@ -1,10 +1,10 @@
 {namespace form=Neos\Form\ViewHelpers}
 
 <fieldset id="{section.uniqueIdentifier}"{f:if(condition: section.properties.sectionClassAttribute, then: ' class="{section.properties.sectionClassAttribute}"')}>
-	<f:if condition="{section.label}">
-		<legend>{f:translate(id: 'form.section.{section.identifier}', source: '{section.renderingOptions.translationSource}', package: '{section.renderingOptions.translationPackage}', value: '{section.label}')}</legend>
-	</f:if>
-	<f:for each="{section.elements}" as="element">
-		<form:renderRenderable renderable="{element}" />
-	</f:for>
+    <f:if condition="{section.label}">
+        <legend>{f:translate(id: 'form.section.{section.identifier}', source: '{section.renderingOptions.translationSource}', package: '{section.renderingOptions.translationPackage}', value: '{section.label}')}</legend>
+    </f:if>
+    <f:for each="{section.elements}" as="element">
+        <form:renderRenderable renderable="{element}" />
+    </f:for>
 </fieldset>

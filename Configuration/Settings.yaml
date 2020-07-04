@@ -1,4 +1,3 @@
-
 Neos:
   Form:
     presets:
@@ -6,46 +5,46 @@ Neos:
         title: Bootstrap
         parentPreset: default
         formElementTypes:
-          'Neos.Form:Base':
+          "Neos.Form:Base":
             renderingOptions:
-              templatePathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/{@type}.html'
-              partialPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Partials/{@type}.html'
-              layoutPathPattern: 'resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Layouts/{@type}.html'
+              templatePathPattern: "resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/{@type}.html"
+              partialPathPattern: "resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Partials/{@type}.html"
+              layoutPathPattern: "resource://ObisConcept.NeosBootstrapForm/Private/Templates/Form/Layouts/{@type}.html"
               translationSource: Form
               validationErrorTranslationPackage: ObisConcept.NeosBootstrapForm
-          'Neos.Form:Form':
+          "Neos.Form:Form":
             renderingOptions:
               formClassAttribute: form-horizontal
-              formPrevButtonClassAttribute: 'btn btn-cancel'
-              formNextButtonClassAttribute: 'btn btn-primary'
-              formSubmitButtonClassAttribute: 'btn btn-primary'
+              formPrevButtonClassAttribute: "btn btn-cancel"
+              formNextButtonClassAttribute: "btn btn-primary"
+              formSubmitButtonClassAttribute: "btn btn-primary"
               containerClassAttribute: pull-left
-              actionClassAttribute: 'col-sm-10 col-sm-offset-2'
-          'Neos.Form:FormElement':
+              actionClassAttribute: "col-sm-10 col-sm-offset-2"
+          "Neos.Form:FormElement":
             properties:
-              labelClassAttribute: 'col-sm-2 control-label'
+              labelClassAttribute: "col-sm-2 control-label"
               containerClassAttribute: form-group
               containerInnerClassAttribute: col-sm-10
               elementClassAttribute: form-control
               elementErrorClassAttribute: has-error
-          'Neos.Form:Page':
+          "Neos.Form:Page":
             renderingOptions:
               pageClassAttribute: col-xs-12
-          'Neos.Form:Section':
+          "Neos.Form:Section":
             properties:
               sectionClassAttribute: col-xs-12
-          'Neos.Form:MultiLineText':
+          "Neos.Form:MultiLineText":
             properties:
               elementClassAttribute: form-control
-          'Neos.Form:SingleSelectRadiobuttons':
+          "Neos.Form:SingleSelectRadiobuttons":
             properties:
               elementListClassAttrbiute: list-unstyled
-          'ObisConcept.NeosBootstrapForm:GoogleCaptcha':
+          "ObisConcept.NeosBootstrapForm:GoogleCaptcha":
             superTypes:
-              - 'Neos.Form:FormElement'
+              - "Neos.Form:FormElement"
             implementationClassName: ObisConcept\NeosBootstrapForm\FormElements\GoogleCaptcha
             properties:
-              sitekey: ''
+              sitekey: ""
   Neos:
     fusion:
       autoInclude:
